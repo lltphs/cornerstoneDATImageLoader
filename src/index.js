@@ -1,22 +1,17 @@
-import arrayBufferToImage from './arrayBufferToImage.js';
+import getImagePromiseFromVirtualSliceCanvas from './getImagePromiseFromVirtualSliceCanvas.js';
 import createImage from './createImage.js';
-import { loadImage, configure } from './loadImage.js';
-import { external } from './externalModules.js';
+import { loadImage } from './loadImage.js';
 
-const cornerstoneWebImageLoader = {
-  arrayBufferToImage,
+const cornerstoneDATImageLoader = {
+  getImagePromiseFromVirtualSliceCanvas,
   createImage,
-  loadImage,
-  configure,
-  external
+  loadImage
 };
 
 export {
-  arrayBufferToImage,
+  getImagePromiseFromVirtualSliceCanvas,
   createImage,
-  loadImage,
-  configure,
-  external
+  loadImage
 };
 
-export default cornerstoneWebImageLoader;
+export default cornerstoneDATImageLoader;
